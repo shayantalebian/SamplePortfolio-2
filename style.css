@@ -9,4 +9,12 @@ html {
   font-optical-sizing: auto;
 }
 
+body {
+  background-color: #030712;
+}
+
+h1 {
+  color: #0284c7;
+}
+
 /*# sourceMappingURL=style.css.map */

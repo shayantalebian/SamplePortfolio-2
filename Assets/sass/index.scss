@@ -17,3 +17,11 @@ html {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 }
+
+body {
+  background-color: $primary;
+}
+
+h1 {
+  color: $accent;
+}
