@@ -1,0 +1,24 @@
+// MediaQueries
+@mixin query($width) {
+  @if ($width == $desktop) {
+    @media (max-width: $desktop) {
+      @content;
+    }
+  } @else if ($width == $small-desktop) {
+    @media (max-width: $small-desktop) {
+      @content;
+    }
+  } @else if ($width == $tablets) {
+    @media (max-width: $tablets) {
+      @content;
+    }
+  } @else if ($width == $mobile) {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if ($width == $small-mobile) {
+    @media (max-width: $small-mobile) {
+      @content;
+    }
+  }
+}

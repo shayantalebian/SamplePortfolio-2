@@ -1,0 +1,19 @@
+// Imports
+@import "works";
+@import "variables";
+@import "mixins";
+@import "about";
+@import "footer";
+@import "header";
+
+// Defualts
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
