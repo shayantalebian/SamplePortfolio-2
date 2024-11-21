@@ -385,12 +385,105 @@ footer .about-status a:hover {
   color: #0284c7;
 }
 
+.up {
+  opacity: 0;
+  transition: all 300ms;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000000;
+  border-radius: 50%;
+  border: 1px solid #374151;
+  background-color: #272b32;
+  padding: 5px;
+  cursor: pointer;
+}
+.up i {
+  color: #f3f4f6;
+  font-size: 2rem;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #272b32;
+  z-index: 12121;
+  box-shadow: 2px 20px 15px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: -600px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: all 500ms;
+}
+.mobile-nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+}
+.mobile-nav div a {
+  color: #f3f4f6;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 300ms;
+}
+.mobile-nav i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3rem;
+  color: #f3f4f6;
+  cursor: pointer;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
 header {
   margin: 15px;
   padding: 5px 10px;
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
+}
+header .menu {
+  background-color: #272b32;
+  padding: 20px 20px;
+  border-radius: 50px;
+  border: 1px solid #374151;
+  display: none;
+}
+header .menu i {
+  font-size: 3rem;
+  color: #f3f4f6;
+  cursor: pointer;
+}
+header .menu div {
+  background-color: #272b32;
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+  header nav {
+    display: none !important;
+  }
+  header .menu {
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  header .menu i {
+    font-size: 2.3rem;
+  }
 }
 header .logo {
   width: 70px;

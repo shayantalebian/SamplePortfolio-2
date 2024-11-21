@@ -45,22 +45,37 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body style="position: relative">
+    <!-- GO UP -->
+    <div class="up" id="up"><i class="ri-arrow-up-line"></i></div>
     <!-- HEADER -->
-    <header>
+    <div class="mobile-nav" id="mobile-nav">
+      <div>
+        <a id="head4" href="#about" class="selected">About</a>
+        <a id="head5" href="#portfolio">Portfolio</a>
+        <a id="head6" href="#footer">Contact Me</a>
+      </div>
+      <i class="ri-close-line" id="close"></i>
+    </div>
+
+    <header id="header">
       <div class="logo">
         <img src="./assets/pic/Logo.png" alt="logo" />
       </div>
       <nav>
         <a id="head1" href="#about" class="selected">About</a>
         <a id="head2" href="#portfolio">Portfolio</a>
-        <a id="head3" href="#contact">Contact Me</a>
+        <a id="head3" href="#footer">Contact Me</a>
       </nav>
+
+      <div class="menu" id="menu">
+        <i class="ri-menu-line"></i>
+      </div>
     </header>
     <!-- MAIN -->
-    <main>
+    <main id="main">
       <!-- ABOUT -->
-      <div class="about">
+      <div class="about" id="about">
         <div class="about-info">
           <h3>Full-Stack Developer</h3>
           <h2>I'm Shayan Talebian</h2>
@@ -87,7 +102,7 @@
       </div>
 
       <!-- WORKS -->
-      <div class="works">
+      <div class="works" id="portfolio">
         <div class="recent-works">
           <i class="ri-circle-fill"></i>
           <h4>Recent Works</h4>
@@ -169,7 +184,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="footer" id="footer">
       <div class="name">
         <span>Shayan</span>
         <span>Talebian</span>
