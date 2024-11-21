@@ -259,7 +259,7 @@
   padding: 5px 0;
 }
 .about .about-pic .about-status i {
-  color: #40c057;
+  color: #0284c7;
   font-size: 0.8rem;
 }
 .about .about-pic .about-status a {
@@ -268,7 +268,7 @@
   transition: all 300ms;
 }
 .about .about-pic .about-status a:hover {
-  color: #40c057;
+  color: #0284c7;
 }
 .about .about-pic .about-img {
   width: 250px;
@@ -317,6 +317,72 @@
   .about {
     padding: 40px 30px 60px;
   }
+}
+
+footer {
+  margin: 15px 25px;
+  background-color: #272b32;
+  border-radius: 20px;
+  border: 1px solid #374151;
+  padding: 40px 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 20px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+footer .name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+footer .name span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+footer .links a {
+  font-size: 1rem;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: all 300ms;
+}
+footer .links a:hover {
+  color: #0284c7;
+}
+footer .about-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #374151;
+  border-radius: 20px;
+  background-color: #272b32;
+  padding: 5px 20px;
+}
+footer .about-status i {
+  color: #0284c7;
+  font-size: 0.8rem;
+}
+footer .about-status a {
+  text-decoration: none;
+  color: #f3f4f6;
+  transition: all 300ms;
+}
+footer .about-status a:hover {
+  color: #0284c7;
 }
 
 header {

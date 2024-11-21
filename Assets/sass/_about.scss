@@ -100,7 +100,7 @@
       margin-bottom: 60px;
       padding: 5px 0;
       i {
-        color: #40c057;
+        color: $accent;
         font-size: 0.8rem;
       }
       a {
@@ -108,7 +108,7 @@
         color: $text-primary;
         transition: all 300ms;
         &:hover {
-          color: #40c057;
+          color: $accent;
         }
       }
     }
