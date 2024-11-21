@@ -1,0 +1,179 @@
+.works {
+  margin: 15px 25px;
+  background-color: $secondary;
+  border-radius: 20px;
+  border: 1px solid $border;
+  padding: 60px 40px 40px;
+
+  .recent-works {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    color: $text-darker;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+
+    i {
+      font-size: 0.7rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.15rem;
+      i {
+        font-size: 0.62rem;
+      }
+    }
+  }
+
+  .portfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .x,
+    .apple,
+    .freelance,
+    .startup {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h5 {
+        font-size: 1.2rem;
+        color: $text-secondary;
+        margin-bottom: 7px;
+      }
+    }
+
+    .job {
+      p {
+        color: $text-darker;
+        font-size: 0.95rem;
+      }
+    }
+
+    .company {
+      h5 {
+        font-size: 1rem;
+        color: $text-darker;
+      }
+    }
+  }
+  @media (max-width: $large-mobile) {
+    i {
+      font-size: 0.6rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    .portfo {
+      h5 {
+        font-size: 1rem !important;
+      }
+
+      p {
+        font-size: 0.8rem !important;
+      }
+
+      .company {
+        h5 {
+          font-size: 0.9rem !important;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px 40px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  .about-work {
+    margin-right: 0 !important;
+  }
+
+  .features {
+    margin-left: 0 !important;
+  }
+
+  @media (max-width: $tablets) {
+    grid-template-columns: 1fr;
+    .about-work {
+      margin-right: 25px !important;
+    }
+
+    .features {
+      margin-left: 25px !important;
+    }
+  }
+}
+
+.about-work {
+  margin: 15px 25px;
+  background-color: $secondary;
+  border-radius: 20px;
+  border: 1px solid $border;
+  padding: 40px 40px 40px;
+
+  h3 {
+    color: $text-primary;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $text-darker;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 30px 40px;
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 15px 25px;
+  gap: 15px;
+
+  .first,
+  .second,
+  .third,
+  .fourth {
+    background-color: $secondary;
+    border-radius: 20px;
+    border: 1px solid $border;
+    padding: 25px 20px;
+    h5 {
+      font-size: 1rem;
+      color: $text-secondary;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: $text-darker;
+    }
+  }
+
+  @media (max-width: $large-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
